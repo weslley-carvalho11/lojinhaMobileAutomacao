@@ -1,0 +1,22 @@
+Comandos CMD:
+adb devices - Para saber o  id do dispositivo
+adb shell dumpsys window | findstr  -i "mCurrentFocus - Obtemos as informações de appPackage e appActivity
+
+
+Código:
+
+Anotações:
+É necessário o uso de dois softwares do Appium, o Appium Server GUI que serve para criar uma um servidor que irá
+conectar o dispositivo, seja ele virtual ou físico, o código da IDE e o Appium que serve uma ferramenta de inspesão,
+semelhante como usamos no browser.
+
+Quando usamos o Appium é a informação de elementoid está com o código hash significa que ele é gerado
+aleatoriamente, isso significa que da próxima vez em que abrimos o app, o elementoid será outro, o que prejudica
+e muito usa-lo como identificador nos testes.
+
+Na ferramenta do Appium clique no ícone de lupa (Search for elements), selecione a opção de id, depois digite o resourchid
+para encontrar elementos com mesmo id, caso não tenha podemos usar como identificar no código de automação, se não tivermos
+outra opção.
+
+As vezes um teste que estava funcionando para de funcionar, pois, as vezes o tempo de carregamento das informações ou elementos
+está alterado pelo processamento do computador ou pelo número de informações carregadas.
